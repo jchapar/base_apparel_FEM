@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Base Appearal | Coming Soon</title>
   </head>
-  <body class="font-sans bg-desaturatedRed">
+  <body class="font-sans bg-gradient-to-br from-gradientOne to-gradientTwo">
     <!-- Global container -->
     <div class="container mx-auto">
       <!-- Heading -->
@@ -22,19 +22,31 @@
       </div>
       <main>
         <!-- Image -->
-        <div>
-          <img src="images/hero-mobile.jpg" alt="" />
+        <div class="w-full">
+          <img src="images/hero-mobile.jpg" alt="" class="w-full" />
         </div>
         <!-- Content -->
-        <div>
-          <h1><span>We're</span> Coming Soon</h1>
-          <p>
+        <div class="px-8 py-12 mx-auto h-screen">
+          <h1
+            class="text-[40px] text-center font-semibold uppercase tracking-[10px] text-darkGrayishRed max-w-[315px] mx-auto"
+          >
+            <span class="font-thin text-[#CE9898]">We're</span> Coming Soon
+          </h1>
+          <p class="text-center text-softRed text-[14px] max-w-[325px] mx-auto mb-10">
             Hello fellow shoppers! We're currently building our new fashion store. Add your email
             below to stay up-to-date with announcements and our launch deals.
           </p>
-          <div class="input-wrapper">
-            <input type="email" placeholder="Email Address" />
-            <button>></button>
+          <div class="input-wrapper flex relative">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="border-[1px] opacity-60 rounded-full w-full py-2 px-4 h-[50px] border-desaturatedRed placeholder:text-desaturatedRed outline-none"
+            />
+            <button
+              class="absolute text-white bg-gradient-to-br from-gradientThree to-gradientFour w-[70px] rounded-full h-[50px] right-0 flex items-center justify-center hover:opacity-80"
+            >
+              <img src="images/icon-arrow.svg" alt="" />
+            </button>
           </div>
         </div>
       </main>

@@ -14,39 +14,44 @@
     <title>Base Appearal | Coming Soon</title>
   </head>
   <body class="font-sans bg-gradient-to-br from-gradientOne to-gradientTwo">
-    <!-- Global container -->
-    <div class="container mx-auto">
-      <!-- Heading -->
-      <div class="bg-white w-full h-[80px] flex items-center justify-start pl-8">
-        <img src="images/logo.svg" alt="" />
-      </div>
-      <main>
-        <!-- Image -->
-        <div class="w-full">
-          <img src="images/hero-mobile.jpg" alt="" class="w-full" />
+    <!-- Global Container -->
+    <div class="h-screen w-full">
+      <!-- Mobile View -->
+      <main class="md:hidden">
+        <!-- Logo -->
+        <div class="logo-container h-[80px] p-8 flex items-center justify-start">
+          <img src="images/logo.svg" alt="Logo" />
         </div>
         <!-- Content -->
-        <div class="px-8 py-12 mx-auto h-screen">
-          <h1
-            class="text-[40px] text-center font-semibold uppercase tracking-[10px] text-darkGrayishRed max-w-[315px] mx-auto"
-          >
-            <span class="font-thin text-[#CE9898]">We're</span> Coming Soon
-          </h1>
-          <p class="text-center text-softRed text-[14px] max-w-[325px] mx-auto mb-10">
-            Hello fellow shoppers! We're currently building our new fashion store. Add your email
-            below to stay up-to-date with announcements and our launch deals.
-          </p>
-          <div class="input-wrapper flex relative">
-            <input
-              type="email"
-              placeholder="Email Address"
-              class="border-[1px] opacity-60 rounded-full w-full py-2 px-4 h-[50px] border-desaturatedRed placeholder:text-desaturatedRed outline-none"
-            />
-            <button
-              class="absolute text-white bg-gradient-to-br from-gradientThree to-gradientFour w-[70px] rounded-full h-[50px] right-0 flex items-center justify-center hover:opacity-80"
+        <div class="content-container w-full">
+          <!-- Image -->
+          <div class="w-full">
+            <img src="images/hero-mobile.jpg" alt="" class="w-full" />
+          </div>
+          <!-- Text -->
+          <div class="py-10 px-8 flex flex-col items-center justify-center">
+            <h1
+              class="text-[40px] tracking-[10px] uppercase max-w-[311px] text-center font-semibold text-darkGrayishRed mb-8"
             >
-              <img src="images/icon-arrow.svg" alt="" />
-            </button>
+              <span class="font-thin text-[#CE9898]">We're</span> coming soon
+            </h1>
+            <p class="text-[14px] text-[#CE9898] text-center max-w-[311px] tracking-[1px] mb-8">
+              Hello fellow shoppers! We're currently building our new fashion store. Add your email
+              below to stay up-to-date with announcements and our launch deals.
+            </p>
+            <!-- Input Wrapper -->
+            <div class="relative w-full">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full border-[1px] border-[#CE9898] rounded-full h-[50px] px-8 placeholder:text-desaturatedRed outline-none"
+              />
+              <button
+                class="bg-gradient-to-br from-gradientThree to-gradientFour h-[50px] w-[65px] rounded-full flex items-center justify-center absolute right-0 top-0 shadow-xl"
+              >
+                <img src="images/icon-arrow.svg" alt="Submit button" />
+              </button>
+            </div>
           </div>
         </div>
       </main>

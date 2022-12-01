@@ -21,6 +21,10 @@ module.exports = {
       fontFamily: {
         sans: ['Josefin Sans', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero-desktop-pattern': "url('./images/bg-pattern-desktop.svg')",
+        'hero-desktop-image': "url('./images/hero-desktop.jpg')",
+      },
     },
   },
   plugins: [],

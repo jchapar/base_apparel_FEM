@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Base Appearal | Coming Soon</title>
   </head>
-  <body class="font-sans bg-gradient-to-br from-gradientOne to-gradientTwo">
+  <body class="font-sans bg-gradient-to-br from-gradientOne to-gradientTwo h-full w-full">
     <!-- Global Container -->
     <div class="h-screen w-full">
       <!-- Mobile View -->
@@ -52,6 +52,55 @@
                 <img src="images/icon-arrow.svg" alt="Submit button" />
               </button>
             </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Desktop View -->
+      <main class="hidden md:block h-full w-full relative">
+        <!-- BG Image -->
+        <img src="images/bg-pattern-desktop.svg" alt="" class="absolute -z-10 h-full w-full" />
+        <!-- Grid container -->
+        <div class="grid grid-cols-2 w-full h-full z-10">
+          <!-- Grid item -->
+          <div class="col-start-1 col-end-3 h-full w-full flex flex-col">
+            <!-- Logo -->
+            <div class="logo-container h-[80px] py-8 flex items-center justify-start pl-40">
+              <img src="images/logo.svg" alt="Logo" />
+            </div>
+            <!-- Text -->
+            <div class="h-full w-full flex flex-col items-start justify-center pl-40">
+              <div
+                class="h-full w-full py-10 flex flex-col items-center justify-center max-w-[450px]"
+              >
+                <h1
+                  class="text-[64px] tracking-[17px] leading-[71px] uppercase text-left font-semibold text-darkGrayishRed mb-8"
+                >
+                  <span class="font-thin text-[#CE9898]">We're</span> coming soon
+                </h1>
+                <p class="text-[16px] text-[#CE9898] text-left tracking-[1px] mb-8">
+                  Hello fellow shoppers! We're currently building our new fashion store. Add your
+                  email below to stay up-to-date with announcements and our launch deals.
+                </p>
+                <!-- Input Wrapper -->
+                <div class="relative w-full">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="w-full border-[1px] border-[#CE9898] rounded-full h-[50px] px-8 placeholder:text-desaturatedRed outline-none"
+                  />
+                  <button
+                    class="bg-gradient-to-br from-gradientThree to-gradientFour h-[50px] w-[65px] rounded-full flex items-center justify-center absolute right-0 top-0 shadow-xl"
+                  >
+                    <img src="images/icon-arrow.svg" alt="Submit button" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Grid item -->
+          <div class="col-start-3 col-end-4 object-fit bg-red-900 w-full h-full">
+            <img src="images/hero-desktop.jpg" alt="" class="object-fit w-full h-full" />
           </div>
         </div>
       </main>
